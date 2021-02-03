@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,13 @@
 		293ECEF425CAF69B0029BFF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293ECEF225CAF69B0029BFF9 /* Main.storyboard */; };
 		293ECEF625CAF69C0029BFF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 293ECEF525CAF69C0029BFF9 /* Assets.xcassets */; };
 		293ECEF925CAF69C0029BFF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293ECEF725CAF69C0029BFF9 /* LaunchScreen.storyboard */; };
+		293ECF0525CAF90F0029BFF9 /* ADConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 293ECF0425CAF90F0029BFF9 /* ADConfig.plist */; };
+		293ECF0C25CAFDEE0029BFF9 /* ADConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293ECF0825CAFADF0029BFF9 /* ADConfig.swift */; };
+		F00F1C5535E011E44EC156E1 /* Pods_AzureADDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0127A3E03C88DC0098D0CD2E /* Pods_AzureADDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0127A3E03C88DC0098D0CD2E /* Pods_AzureADDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AzureADDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		293ECEE925CAF69B0029BFF9 /* AzureADDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzureADDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		293ECEEC25CAF69B0029BFF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		293ECEEE25CAF69B0029BFF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,11 @@
 		293ECEF525CAF69C0029BFF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		293ECEF825CAF69C0029BFF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		293ECEFA25CAF69C0029BFF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		293ECF0425CAF90F0029BFF9 /* ADConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ADConfig.plist; sourceTree = "<group>"; };
+		293ECF0825CAFADF0029BFF9 /* ADConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADConfig.swift; sourceTree = "<group>"; };
+		293ECF0E25CAFF090029BFF9 /* AzureADDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AzureADDemo.entitlements; sourceTree = "<group>"; };
+		6BCA73A9CF2C510CD6AC091E /* Pods-AzureADDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureADDemo.release.xcconfig"; path = "Target Support Files/Pods-AzureADDemo/Pods-AzureADDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6C9778067F63A6422BAC80C1 /* Pods-AzureADDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureADDemo.debug.xcconfig"; path = "Target Support Files/Pods-AzureADDemo/Pods-AzureADDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F00F1C5535E011E44EC156E1 /* Pods_AzureADDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +52,8 @@
 			children = (
 				293ECEEB25CAF69B0029BFF9 /* AzureADDemo */,
 				293ECEEA25CAF69B0029BFF9 /* Products */,
+				312F14B4959DBF58BCD2CDD9 /* Pods */,
+				CB8174ED8AF9956B36B38F88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +68,8 @@
 		293ECEEB25CAF69B0029BFF9 /* AzureADDemo */ = {
 			isa = PBXGroup;
 			children = (
+				293ECF0E25CAFF090029BFF9 /* AzureADDemo.entitlements */,
+				293ECF0725CAFACF0029BFF9 /* Models */,
 				293ECEEC25CAF69B0029BFF9 /* AppDelegate.swift */,
 				293ECEEE25CAF69B0029BFF9 /* SceneDelegate.swift */,
 				293ECEF025CAF69B0029BFF9 /* ViewController.swift */,
@@ -63,8 +77,34 @@
 				293ECEF525CAF69C0029BFF9 /* Assets.xcassets */,
 				293ECEF725CAF69C0029BFF9 /* LaunchScreen.storyboard */,
 				293ECEFA25CAF69C0029BFF9 /* Info.plist */,
+				293ECF0425CAF90F0029BFF9 /* ADConfig.plist */,
 			);
 			path = AzureADDemo;
+			sourceTree = "<group>";
+		};
+		293ECF0725CAFACF0029BFF9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				293ECF0825CAFADF0029BFF9 /* ADConfig.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		312F14B4959DBF58BCD2CDD9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C9778067F63A6422BAC80C1 /* Pods-AzureADDemo.debug.xcconfig */,
+				6BCA73A9CF2C510CD6AC091E /* Pods-AzureADDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CB8174ED8AF9956B36B38F88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0127A3E03C88DC0098D0CD2E /* Pods_AzureADDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +114,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 293ECEFD25CAF69C0029BFF9 /* Build configuration list for PBXNativeTarget "AzureADDemo" */;
 			buildPhases = (
+				1CBBD15803F685120F27F398 /* [CP] Check Pods Manifest.lock */,
 				293ECEE525CAF69B0029BFF9 /* Sources */,
 				293ECEE625CAF69B0029BFF9 /* Frameworks */,
 				293ECEE725CAF69B0029BFF9 /* Resources */,
+				BF0401B964B0F123C21130BB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,16 +169,60 @@
 				293ECEF925CAF69C0029BFF9 /* LaunchScreen.storyboard in Resources */,
 				293ECEF625CAF69C0029BFF9 /* Assets.xcassets in Resources */,
 				293ECEF425CAF69B0029BFF9 /* Main.storyboard in Resources */,
+				293ECF0525CAF90F0029BFF9 /* ADConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CBBD15803F685120F27F398 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AzureADDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF0401B964B0F123C21130BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AzureADDemo/Pods-AzureADDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AzureADDemo/Pods-AzureADDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AzureADDemo/Pods-AzureADDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		293ECEE525CAF69B0029BFF9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				293ECF0C25CAFDEE0029BFF9 /* ADConfig.swift in Sources */,
 				293ECEF125CAF69B0029BFF9 /* ViewController.swift in Sources */,
 				293ECEED25CAF69B0029BFF9 /* AppDelegate.swift in Sources */,
 				293ECEEF25CAF69B0029BFF9 /* SceneDelegate.swift in Sources */,
@@ -283,9 +369,11 @@
 		};
 		293ECEFE25CAF69C0029BFF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C9778067F63A6422BAC80C1 /* Pods-AzureADDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AzureADDemo/AzureADDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EWH85CQYYJ;
 				INFOPLIST_FILE = AzureADDemo/Info.plist;
@@ -293,7 +381,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.offensively-bad.AzureADDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ts.AzureADDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,9 +390,11 @@
 		};
 		293ECEFF25CAF69C0029BFF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BCA73A9CF2C510CD6AC091E /* Pods-AzureADDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AzureADDemo/AzureADDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EWH85CQYYJ;
 				INFOPLIST_FILE = AzureADDemo/Info.plist;
@@ -312,7 +402,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.offensively-bad.AzureADDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ts.AzureADDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
